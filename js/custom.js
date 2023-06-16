@@ -34,7 +34,21 @@ $(".client_owl-carousel").owlCarousel({
     }
 });
 
-
+$('.custom-carousel').on('slid.bs.carousel', function () {
+    var $this = $(this);
+    if ($this.find('.carousel-inner .carousel-item:last').hasClass('active')) {
+      $this.carousel('pause');
+      setTimeout(function(){
+        $this.carousel('cycle');
+        $this.carousel(0);
+      }, 17000);
+    } else if ($this.find('.carousel-inner .carousel-item:first').hasClass('active')) {
+      $this.carousel('pause');
+      setTimeout(function(){
+        $this.carousel('cycle');
+      }, 17000);
+    }
+});
 
 /** google_map js **/
 function myMap() {
