@@ -48,7 +48,7 @@ p {
     padding-bottom: 100%;
     position: relative;
     border-radius: 20px;
-
+    overflow: auto;
     background: url("../images/logo_backimg.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -61,6 +61,10 @@ p {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 150%;
+}
+
+.image-container img{
+    width: -webkit-fill-available;
 }
 
 .noMarginRL{
@@ -115,7 +119,7 @@ p {
 }
 
 .slider_section_features {
-    padding: 0 0 25px 0 !important;
+    padding: 16px 0 20px 0 !important;
     margin: 0 90px 50px 90px;
     background-color: var(--blue_primary_light_200);
 }
