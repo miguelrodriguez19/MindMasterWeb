@@ -917,7 +917,9 @@ a:focus {
 .info_section form button {
   width: 100%;
   text-align: center;
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 10px 55px;
   background-color: var(--primaryColor);
   color: #ffffff;
