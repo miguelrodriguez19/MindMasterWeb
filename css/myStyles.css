@@ -206,7 +206,7 @@ p {
 
 .carouselImg {
     max-height: 400px;
-    object-fit: contain;
+    object-fit: cover;
 }
 
 .img-box_ {
