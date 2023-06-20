@@ -42,54 +42,56 @@
     <div class="hero_area">
 
         <div class="hero_bg_box">
-          <div class="bg_img_box">
-            <img src="images/hero-bg.png" alt="">
-          </div>
+            <div class="bg_img_box">
+                <img src="images/hero-bg.png" alt="">
+            </div>
         </div>
-    
+
         <!-- header section strats -->
         <header class="header_section">
-          <div class="container-fluid">
-            <nav class="navbar navbar-expand-lg custom_nav-container ">
-              <a class="navbar-brand" href="index.html">
-                <div class="logo_">
-                  <img src="images/logo_white.png" height="60px" alt="App logo">
-                  <span>Mind Master</span>
-                </div>
-              </a>
-    
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class=""> </span>
-              </button>
-    
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav  ">
-                  <li class="nav-item ">
-                    <a class="nav-link" href="index.html">Home </a>
-                  </li>
-                  <li class="nav-item ">
-                    <a class="nav-link" href="about.html">About</a>
-                  </li>
-                  <li class="nav-item ">
-                    <a class="nav-link " href="features.html">Features</a>
-                  </li>
-                  <li class="nav-item ">
-                    <a class="nav-link" href="why.html">Why Us</a>
-                  </li>
-                  <li class="nav-item active">
-                    <a class="nav-link" href="help.html">Help <span class="sr-only">(current)</span></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="underDevelopment.html"> <i class="fa fa-user" aria-hidden="true"></i> Login</a>
-                  </li>
-                </ul>
-              </div>
-            </nav>
-          </div>
+            <div class="container-fluid">
+                <nav class="navbar navbar-expand-lg custom_nav-container ">
+                    <a class="navbar-brand" href="index.html">
+                        <div class="logo_">
+                            <img src="images/logo_white.png" height="60px" alt="App logo">
+                            <span>Mind Master</span>
+                        </div>
+                    </a>
+
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class=""> </span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav  ">
+                            <li class="nav-item ">
+                                <a class="nav-link" href="index.html">Home </a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="about.html">About</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link " href="features.html">Features</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="why.html">Why Us</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="help.html">Help <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="underDevelopment.html"> <i class="fa fa-user"
+                                        aria-hidden="true"></i> Login</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
         </header>
         <!-- end header section -->
-      </div>
+    </div>
 
     <main>
         <div class="container">
@@ -104,44 +106,11 @@
             <div class="accordion" id="faqAccordion">
                 <div class="container faq_section light_section">
                     <h1 class="text-center my-4">Frequently Asked Questions</h1>
-                    <div class="accordion" id="faqAccordion">
-                        <div class="card">
-                            <div class="card-header" id="faqHeadingOne">
-                                <h2 class="mb-0">
-                                    <button class="btn btn-link btn-block text-left collapsed" type="button"
-                                        data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
-                                        aria-controls="collapseOne">
-                                        FAQ 1: ¿Cómo puedo empezar a usar Mind Master?
-                                    </button>
-                                </h2>
-                            </div>
-                            <div id="collapseOne" class="collapse" aria-labelledby="faqHeadingOne"
-                                data-parent="#faqAccordion">
-                                <div class="card-body">
-                                    Respuesta a la pregunta 1.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header" id="faqHeadingTwo">
-                                <h2 class="mb-0">
-                                    <button class="btn btn-link btn-block text-left collapsed" type="button"
-                                        data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
-                                        aria-controls="collapseTwo">
-                                        FAQ 2: ¿Cómo puedo recuperar mi contraseña si la olvido?
-                                    </button>
-                                </h2>
-                            </div>
-                            <div id="collapseTwo" class="collapse" aria-labelledby="faqHeadingTwo"
-                                data-parent="#faqAccordion">
-                                <div class="card-body">
-                                    Respuesta a la pregunta 2.
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Add more FAQs as needed -->
+                    <div class="accordion" id="faqAccordion-container">
+                        <!-- FAQs from Database -->
                     </div>
                 </div>
+            </div>
     </main>
 
 
@@ -258,7 +227,10 @@
         </div>
     </section>
     <!-- footer section -->
-
+    
+    <!-- Firebase data -->
+    <script src="js/index.js" type="module"></script>
+   
     <!-- jQery -->
     <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
     <!-- popper js -->
@@ -273,9 +245,8 @@
     <!-- custom js -->
     <script type="text/javascript" src="js/custom.js"></script>
     <!-- Google Map -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
-    </script>
-    <!-- End Google Map -->
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">    </script>
 
 </body>
 
